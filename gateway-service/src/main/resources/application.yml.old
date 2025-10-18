@@ -2,7 +2,7 @@ spring:
   cloud:
     gateway:
       server:
-        webmvc:
+        webflux:
           routes:
             - id: r1
               uri: lb://CUSTOMER-SERVICE
