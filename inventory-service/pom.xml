@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>q.jv</groupId>
-    <artifactId>inventoryservice</artifactId>
+    <artifactId>inventory-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>inventoryservice</name>
     <description>inventoryservice</description>
