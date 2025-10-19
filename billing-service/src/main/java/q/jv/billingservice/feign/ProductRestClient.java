@@ -1,6 +1,7 @@
 package q.jv.billingservice.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import q.jv.billingservice.model.Product;
@@ -9,4 +10,7 @@ import q.jv.billingservice.model.Product;
 public interface ProductRestClient {
     @GetMapping("/products/{id}")
     Product findProductById(@PathVariable String id);
+
+    @GetMapping("/products")
+    PagedModel<Product> getAllProducts();
 }
