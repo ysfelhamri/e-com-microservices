@@ -1,6 +1,7 @@
 package q.jv.billingservice.entities;
 
 import jakarta.persistence.*;
+import q.jv.billingservice.model.Product;
 
 @Entity
 public class ProductItem {
@@ -12,6 +13,7 @@ public class ProductItem {
     private Bill bill;
     private int quantity;
     private double unitPrice;
+    @Transient private Product product;
 
 
 }

@@ -2,6 +2,7 @@ package q.jv.billingservice.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import q.jv.billingservice.model.Customer;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,4 +17,5 @@ public class Bill {
     private long customerId;
     @OneToMany(mappedBy = "bill")
     private List<ProductItem> productItems = new ArrayList<>();
+    @Transient private Customer customer;
 }
